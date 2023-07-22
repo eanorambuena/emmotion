@@ -36,3 +36,18 @@
   width: calc(100% - 12rem)!important;
   resize: none;
 }
+
+@media (max-width: 768px) {
+  .main {
+    padding: 2rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p, .hero p code {
+    font-size: 1rem;
+  }
+  .editable, .editable:focus, .editable:hover, .editable:active {
+    width: calc(100% - 4rem)!important;
+  }
+}
