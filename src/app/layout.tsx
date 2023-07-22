@@ -3,8 +3,9 @@ import { Roboto } from 'next/font/google'
 const roboto = Roboto({ weight: '400', display: 'swap', subsets: ['latin-ext'] });
 
 export const metadata = {
-  title: 'Apy',
-  description: 'An api for a better world'
+  title: 'emmotion',
+  description: 'Write your own story.',
+  author: 'Emmanuel Norambuena'
 }
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
@@ -13,6 +14,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <head>
         <meta charSet="utf-8" />
         <meta name="description" content={metadata.description} />
+        <meta name="author" content={metadata.author} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{metadata.title}</title>
         <link rel="icon" href="/favicon.ico" />
