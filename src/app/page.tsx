@@ -9,9 +9,6 @@ const Home = () => {
         <p>
           <code>Hi()</code> Write your own story.
         </p>
-        <p>
-          Por favor unete a este fabuloso grupo DCC <a href="https://t.me/+pmi8oC58jABiZTgx"> Minarchy </a>
-        </p>
       </div>
       <div className={styles.editableContent}>
         {

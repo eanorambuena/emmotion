@@ -1,12 +1,15 @@
 import { NextResponse } from "next/server";
 
-export async function GET(request: Request) {
+function getQueryParams(request: Request) {
     const url = new URL(request.url);
-    const name = url.searchParams.get("name") ?? "World";
+    const queryParams: any = {};
     url.searchParams.forEach((value, key) => {
-        console.log(`${key}: ${value}`);
+        queryParams[key] = value;
     });
-    return NextResponse.json({
-        message: `Hello ${name}!`
-    });
+    return queryParams;
+}
+
+export async function GET(request: Request) {
+    const params = getQueryParams(request);
+    return NextResponse.json(params);
 }
