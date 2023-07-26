@@ -9,11 +9,14 @@ const Home = () => {
         <p>
           <code>Hi()</code> Write your own story.
         </p>
+        <p>
+          Por favor unete a este fabuloso grupo DCC <a>https://t.me/+pmi8oC58jABiZTgx</a>
+        </p>
       </div>
       <div className={styles.editableContent}>
         {
           [0, 1, 3].map((i) => (
-            <Editable placeholder={'Type ...'} key={i}/>
+            <Editable placeholder={'Type here...'} key={i} />
           ))
         }
       </div>
